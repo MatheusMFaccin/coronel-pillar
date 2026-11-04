@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://6b6o374dcv7e"]
+
+[ext_resource type="Texture2D" uid="uid://dmu0lmod1q7ea" path="res://assets/soldados/revolucionario_atirando.png" id="1_i1tor"]
+[ext_resource type="Script" uid="uid://df7lkj728bx7n" path="res://scripts/SoldierCombatBehavior.gd" id="2_combat"]
+
+[node name="Revolucionario" type="Node3D" unique_id=814068896]
+script = ExtResource("2_combat")
+min_interval_disparo = 0.4
+cor_muzzle = Color(1, 0.6, 0.3, 1)
+intensidade_min = 3.0
+intensidade_max = 6.0
+duracao_fade_min = 0.8
+duracao_fade_max = 2.5
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=814068897]
+modulate = Color(0.18, 0.18, 0.18, 1)
+texture = ExtResource("1_i1tor")
+
+[node name="MuzzleFlash" type="OmniLight3D" parent="." unique_id=814068898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.2, 0.1)
+light_energy = 0.0
+omni_range = 2.0

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://1wk2rwcs06st"]
+
+[ext_resource type="Texture2D" uid="uid://b6kolmohyqnf6" path="res://assets/iloveimg-background-removed/arbusto_pampa.png" id="1_njaov"]
+
+[node name="Arbusto" type="Sprite3D" unique_id=429874520]
+modulate = Color(0, 0, 0, 1)
+billboard = 1
+texture = ExtResource("1_njaov")

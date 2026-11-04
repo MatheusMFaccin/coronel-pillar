@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://4bmhse6ae10n"]
+
+[ext_resource type="Texture2D" uid="uid://pmtg0f77hr27" path="res://assets/soldados/militar_parado.png" id="1_yprp8"]
+
+[node name="MilitarParado" type="Sprite3D" unique_id=1907177229]
+modulate = Color(0, 0, 0, 1)
+billboard = 2
+texture = ExtResource("1_yprp8")

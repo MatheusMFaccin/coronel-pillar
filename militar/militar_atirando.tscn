@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dlv18dcx8hb1a"]
+
+[ext_resource type="Texture2D" uid="uid://cj4csbyummhhm" path="res://assets/soldados/militar_atirando.png" id="1_ubcwk"]
+[ext_resource type="Script" uid="uid://df7lkj728bx7n" path="res://scripts/SoldierCombatBehavior.gd" id="2_combat"]
+
+[node name="MilitarAtirando" type="Node3D" unique_id=1385995762]
+script = ExtResource("2_combat")
+min_interval_disparo = 0.8
+max_interval_disparo = 2.0
+cor_muzzle = Color(1, 0.95, 0.8, 1)
+intensidade_min = 5.0
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1385995763]
+flip_h = true
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("1_ubcwk")
+
+[node name="MuzzleFlash" type="OmniLight3D" parent="." unique_id=1385995764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.2, 0.1)
+light_energy = 0.0
+omni_range = 2.0

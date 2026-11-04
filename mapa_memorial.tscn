@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cxwtdywkkskrk"]
+
+[ext_resource type="Texture2D" uid="uid://buyjku4s0l820" path="res://toolxox-com-tx31-av8ccpoDty.hdr" id="1_ayk2a"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3wxxv"]
+panorama = ExtResource("1_ayk2a")
+energy_multiplier = 1.2
+
+[sub_resource type="Sky" id="Sky_v40rj"]
+sky_material = SubResource("PanoramaSkyMaterial_3wxxv")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_uwc6k"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = SubResource("Sky_v40rj")
+tonemap_mode = 2
+tonemap_exposure = 7.15
+
+[node name="MapaMemorial" type="Node3D" unique_id=825249879]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=916218613]
+environment = SubResource("Environment_uwc6k")

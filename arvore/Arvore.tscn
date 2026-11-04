@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c6kq2m457xsjc"]
+
+[ext_resource type="Texture2D" uid="uid://dmdsxlfintcy0" path="res://assets/iloveimg-background-removed/arvore_pampa.png" id="1_64j0o"]
+
+[node name="Arvore" type="Sprite3D" unique_id=90809465]
+modulate = Color(0, 0, 0, 1)
+billboard = 1
+alpha_cut = 2
+texture_filter = 5
+texture = ExtResource("1_64j0o")

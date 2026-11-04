@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://qvkx3g6udfar"]
+
+[ext_resource type="Texture2D" uid="uid://csafv7q7tgiqb" path="res://assets/soldados/revolucionari_parado.png" id="1_3wfx6"]
+
+[node name="RevolucionarioParado" type="Sprite3D" unique_id=45883691]
+modulate = Color(0.3, 0.3, 0.3, 1)
+billboard = 2
+texture = ExtResource("1_3wfx6")
